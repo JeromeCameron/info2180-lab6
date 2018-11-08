@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Web Dictionary </title>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <!--<script src="index.js" type="text/javascript"></script>-->
+        <script>
+        
+        window.onload = function(){
+            
+            let httpRequest;
+            
+            let button = document.querySelector("button");
+            button.addEventListener("click", function(){
+                let httpRequest = new XMLHttpRequest();
+                let url = "request.php";
+                
+                httpRequest.onreadystatechange = request();
+                httpRequest.open('GET', url);
+                
+            });
+            
+            function request(){
+                if (httpRequest.readyState === XMLHttpRequest.DONE){
+                    if (httpRequest.status === 200){
+                        alert(httpRequest.responseText);
+                    } else {
+                        alert('There was a problem with the request.');
+                    }
+                }
+            }
+            
+        }
+            
+        </script>
+
+    </head>
+    <body>
+        <div id = "main">
+            
+            <div id = "box1">
+                <h1>Web Dictionary</h1>
+            </div>
+            
+            <div id = "box2">
+                <p>Look up definition of a word(e.g. ajax, html, bar, php, javascript or css)</p>
+                <form>
+                    <input type="text">
+                    <button type="button">Search</button>
+                </form>
+            </div>
+            
+            <div id = "box3">
+                 <h3>Result</h3>
+            </div>
+           
+        </div>
+        
+    </body>
+</html>
