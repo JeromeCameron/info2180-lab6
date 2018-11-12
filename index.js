@@ -49,7 +49,7 @@ window.onload = function(){
                             let listItem = document.createElement("li");
                             let txt = "<h3>" + xmlNodes[i].getAttribute("name") + "</h3>" + 
                             "<br>" + "<p>" + xmlNodes[i].childNodes[0].nodeValue + "</p>" +
-                            "<br>" + "<p>" + "-" + xmlNodes[i].getAttribute("author") + "</p>";
+                            "<br>" + "<p>" + "- " + xmlNodes[i].getAttribute("author") + "</p>";
                             listItem.innerHTML = txt;
                             list.appendChild(listItem);
                         }

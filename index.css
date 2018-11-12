@@ -17,7 +17,7 @@ button{
     background-color: Tomato;
 }
 
-p{
+p, input{
     font-size: 12px;
     font-style: italic;
 }
