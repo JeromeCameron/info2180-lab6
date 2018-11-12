@@ -20,13 +20,36 @@ button{
 p{
     font-size: 12px;
     font-style: italic;
-    margin-bottom: 2px;
-}
-
-p, form, div>h3{
-    padding-left: 20px;
 }
 
 #main{
     background-color: LightGray;
+    width: 800px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+ 
+}
+
+li p, h3, br{
+    margin: 0px;
+}
+
+li{
+    padding-bottom: 5px;
+}
+
+#box2, #result, #resultHead{
+    padding-bottom: 5px;
+    width:750px;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+
+#box2{
+    border-bottom: solid;
+    border-color: grey;
+    border-bottom-width: 1px;
 }
